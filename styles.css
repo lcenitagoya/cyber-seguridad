@@ -16,8 +16,10 @@ h1{
 h2{
     font-family: nexa;
     text-align: center;
-    font-size: 20px;
-    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
 }
 
 /* navegaqcion fondo */
@@ -100,4 +102,12 @@ a{
 a:visited{
   color: #000000;
   text-decoration: none;
+}
+
+/*seguridad*/
+h3{
+  font-family: nexa;
+}
+.titul{
+  text-decoration: blue;
 }
