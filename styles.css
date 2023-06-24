@@ -3,7 +3,6 @@
     src: url(Nexa-Heavy.ttf);
 }
 
-
 h1{
     font-size: 100px;
     text-align: center;
@@ -16,8 +15,11 @@ h1{
 h2{
     font-family: nexa;
     text-align: center;
-    font-size: 20px;
-    margin-top: 0%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 5px;
 }
 
 nav{
@@ -76,3 +78,18 @@ button:active {
   transform: scale(0.9);
 }
 
+a{
+  text-decoration: none }
+
+a:visited{
+  color: #000000;
+  text-decoration: none;
+}
+
+/*seguridad*/
+h3{
+  font-family: nexa;
+}
+.titul{
+  text-decoration: blue;
+}
