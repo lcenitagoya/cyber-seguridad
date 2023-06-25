@@ -3,22 +3,6 @@
     src: url(Nexa-Heavy.ttf);
 }
 
-h1{
-    font-size: 100px;
-    text-align: center;
-    font-family: nexa;
-    margin: 0px;
-    
-
-}
-
-h2{
-    font-family: nexa;
-    text-align: center;
-    margin-bottom: 20%;
-    font-size: 5px;
-}
-
 nav{
   background-color: #3393d3;
 }
@@ -33,10 +17,36 @@ a:visited{
   text-decoration: none;
 }
 
+.jumbotron{
+  padding: 30px;
+  background-color: #e6e5e5b9;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    font-family: nexa;
+    margin: 0px;
+}
+
+h2{
+    font-family: nexa;
+    text-align: center;
+    margin-bottom: 20%;
+    font-size: 5px;
+}
+
+h4{
+  font-family: nexa;
+  text-align: center;
+  margin-bottom: 20%;
+  font-size: 5px;
+}
+
 /*cards*/
 .container{
-  margin-top: 2%;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .inner{
