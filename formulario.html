@@ -13,9 +13,17 @@
 </head>
 <body>
     <h1>formulario_test</h1>
-    <form action="http://localhost:80, 443/procesar.formulario.php" method="post">
+    <form action="procesar.formulario.php" method="post">
         <h3>Le agradeceríamos que responda estas simples preguntas planteadas en el siguiente formulario para que podamos realizar un estudio sobre la ciberseguridad de las personas, y como informarte sobre el tema puede ayudarte a mejorar tu seguridad y a prevenir ataques.</h3>
         <h3>(Se recomienda y aconseja realizar este formulario luego de haber explorado y leído un poco el sitio web)</h3>
+        
+        <fieldset>
+        <legend>Ingrese su nombre</legend>
+        <label>
+        <input type="text" name="nombre">
+        </label>
+        </fieldset>
+        
         
         <fieldset>
         <legend>Escoja su rango de edad</legend>
@@ -27,7 +35,7 @@
             <option value="4">Entre 31 - 40</option>
             <option value="5">Entre 41 - 50</option> 
             <option value="6">Mayor de 51 </option>
-        </select>
+            </select>
         </label>
         </fieldset>
 
@@ -39,7 +47,7 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="antivirus" value="2">
+                <input type="radio" name="antivirus" value="0">
                 no
             </label>
         </fieldset>
@@ -52,7 +60,7 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="contraseña" value="2">
+                <input type="radio" name="contraseña" value="0">
                 no
             </label>
         </fieldset>
@@ -65,7 +73,7 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="informacion" value="2">
+                <input type="radio" name="informacion" value="0">
                 no
             </label>
         </fieldset>
@@ -78,7 +86,7 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="ataques" value="2">
+                <input type="radio" name="ataques" value="0">
                 no
             </label>
         </fieldset>
@@ -91,7 +99,7 @@
             </label>
             <br>
             <label>
-                <input type="radio" name="cambioCib" value="2">
+                <input type="radio" name="cambioCib" value="0">
                 no
             </label>
         </fieldset>
