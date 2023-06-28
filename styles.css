@@ -4,7 +4,7 @@
 }
 
 nav{
-  background-color: #3393d3;
+  background-color: #4394ca;
 }
 
 a{
@@ -19,7 +19,7 @@ a:visited{
 
 .jumbotron{
   padding: 30px;
-  background-color: #e6e5e5b9;
+  background-color: #a0baccb4;
 }
 
 h1{
@@ -33,14 +33,16 @@ h2{
     font-family: nexa;
     text-align: center;
     margin-bottom: 20%;
-    font-size: 5px;
+}
+
+h3{
+  font-family: nexa;
+  text-align: center;
 }
 
 h4{
   font-family: nexa;
   text-align: center;
-  margin-bottom: 20%;
-  font-size: 5px;
 }
 
 /*cards*/
@@ -66,9 +68,21 @@ h4{
 
 
 /*seguridad*/
-h3{
-  font-family: nexa;
-}
+
 .accordion{
   margin-bottom: 5%;
+}
+
+/* items amenazas*/
+.mb-2{
+  font-size: 127%;
+  font-family: nexa;
+}
+
+.custom-card-body {
+  padding: 0;
+}
+
+.descripcion{
+  text-align: justify;
 }
