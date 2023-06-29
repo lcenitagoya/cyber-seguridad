@@ -4,7 +4,7 @@
 }
 
 nav{
-  background-color: #4394ca;
+  background-color: #009ad4;
 }
 
 a{
@@ -19,7 +19,7 @@ a:visited{
 
 .jumbotron{
   padding: 30px;
-  background-color: #a0baccb4;
+  background-color: #cfe2ff;
 }
 
 h1{
@@ -84,5 +84,9 @@ h4{
 }
 
 .descripcion{
-  text-align: justify;
+  text-align: left;
+}
+
+#contacto{
+  font-size: 80%;
 }
