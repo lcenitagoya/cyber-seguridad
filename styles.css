@@ -3,8 +3,18 @@
     src: url(Nexa-Heavy.ttf);
 }
 
+@font-face {
+  font-family: nexa_light;
+  src: url(Nexa-ExtraLight.ttf);
+}
+
+body{
+  --bs-body-bg: rgb(163, 184, 205);
+}
+
 nav{
-  background-color: #009ad4;
+  background-color: rgb(110, 165, 220);
+  margin-bottom: 1%;
 }
 
 a{
@@ -17,10 +27,6 @@ a:visited{
   text-decoration: none;
 }
 
-.jumbotron{
-  padding: 30px;
-  background-color: #cfe2ff;
-}
 
 h1{
     font-size: 100px;
@@ -36,12 +42,12 @@ h2{
 }
 
 h3{
-  font-family: nexa;
+  font-family: nexa_light;
   text-align: center;
 }
 
 h4{
-  font-family: nexa;
+  font-family: nexa_light;
   text-align: center;
 }
 
@@ -66,6 +72,10 @@ h4{
   transform: scale(1.2);
 }
 
+.card-body{
+  background: white;
+  border-radius: 2%;
+}
 
 /*seguridad*/
 
