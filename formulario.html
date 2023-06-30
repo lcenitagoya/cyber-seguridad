@@ -12,6 +12,7 @@
     <title>Formulario</title>
 </head>
 <body>
+<<<<<<< HEAD
     <button onclick="url()" id="backtomain" title="Volver a inicio">Volver a incio</button>
     <h1>formulario_test</h1>
     <form action="/Home/InsertData" method="post">
@@ -109,5 +110,122 @@
 
         <button>Mandar</button>
     </form>
+=======
+
+    <div class="formulario">
+        <nav class="navbar navbar-light justify-content-center"> 
+            <a class="navbar-brand" href="index.html">
+              Ciber Seguridad
+            </a>
+        </nav>
+        <h2>Formulario</h1>
+        <form action="procesar.formulario.php" method="post">
+        <h4>Le agradeceríamos que responda estas simples preguntas planteadas en el siguiente formulario para que podamos realizar un estudio sobre la ciberseguridad de las personas, y como informarte sobre el tema puede ayudarte a mejorar tu seguridad y a prevenir ataques.</h4>
+        <h4>(Se recomienda y aconseja realizar este formulario luego de haber explorado y leído un poco el sitio web)</h4>
+
+        <div class="container" id="container_form">
+            <div class="justify-content-center">
+                <div class="card shadow">
+                    <div class="card-body" id="card-body_form">
+                            <fieldset>
+                                <legend>Ingrese su nombre</legend>
+                                <label>
+                                <input type="text" id="nombre" name="nombre">
+                                </label>
+                                </fieldset>
+                                
+                                
+                                <fieldset>
+                                <legend>Escoja su rango de edad</legend>
+                                <label>
+                                    <select id="edad" name="edad">
+                                    <option value="1">Menor de 13</option>
+                                    <option value="2">Entre 13 - 20</option>
+                                    <option value="3">Entre 21 - 30</option>
+                                    <option value="4">Entre 31 - 40</option>
+                                    <option value="5">Entre 41 - 50</option> 
+                                    <option value="6">Mayor de 51 </option>
+                                    </select>
+                                </label>
+                                </fieldset>
+                        
+                                <fieldset>
+                                    <legend>¿Tienes descargado un antivirus en tu computadora?</legend>
+                                    <label>
+                                        <input type="radio" name="antivirus" value="1">
+                                        si
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="antivirus" value="0">
+                                        no
+                                    </label>
+                                </fieldset>
+                        
+                                <fieldset>
+                                    <legend>¿Utilizas una contraseña distinta para cada servicio, dispositivo o cuenta que usas?</legend>
+                                    <label>
+                                        <input type="radio" name="contraseña" value="1">
+                                        si
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="contraseña" value="0">
+                                        no
+                                    </label>
+                                </fieldset>
+                        
+                                <fieldset>
+                                    <legend>¿Tienes cuidado respecto a donde ingresas o publicas tu información personal?</legend>
+                                    <label>
+                                        <input type="radio" name="informacion" value="1">
+                                        si
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="informacion" value="0">
+                                        no
+                                    </label>
+                                </fieldset>
+                        
+                                <fieldset>
+                                    <legend>Previo a esta página, ¿conocías alguno de los riesgos y ataques que puedes sufrir si cuentas con una mala seguridad?</legend>
+                                    <label>
+                                        <input type="radio" name="ataques" value="1">
+                                        si
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="ataques" value="0">
+                                        no
+                                    </label>
+                                </fieldset>
+                        
+                                <fieldset>
+                                    <legend>Luego de la información brindada en esta página web, ¿planeas realizar algún cambio respecto a tu ciberseguridad?</legend>
+                                    <label>
+                                        <input type="radio" name="cambioCib" value="1">
+                                        si
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="cambioCib" value="0">
+                                        no
+                                    </label>
+                                </fieldset>
+                        
+                                <br>
+                                <button class="btn btn-primary">Mandar</button>
+                            </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div> 
+    
+>>>>>>> a23859630b9c59d5b19fab2616676a46e9d90ea2
 </body>
 </html>

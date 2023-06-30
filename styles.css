@@ -3,30 +3,31 @@
     src: url(Nexa-Heavy.ttf);
 }
 
+@font-face {
+  font-family: nexa_light;
+  src: url(Nexa-ExtraLight.ttf);
+}
+
+body{
+  --bs-body-bg: rgb(175, 211, 247);
+  width: 100%;
+}
+
 nav{
-  background-color: #4394ca;
+  background-color: rgb(110, 165, 220);
+  margin-bottom: 1%;
 }
 
-a{
+a, a:visited{
   font-family: nexa;
-  text-decoration: none 
-}
-
-a:visited{
-  color: #000000;
+  color: white;
   text-decoration: none;
 }
 
-.jumbotron{
-  padding: 30px;
-  background-color: #a0baccb4;
-}
 
 h1{
-    font-size: 100px;
     text-align: center;
     font-family: nexa;
-    margin: 0px;
 }
 
 h2{
@@ -35,15 +36,11 @@ h2{
     margin-bottom: 20%;
 }
 
-h3{
-  font-family: nexa;
+h3, h4, p{
+  font-family: nexa_light;
   text-align: center;
 }
 
-h4{
-  font-family: nexa;
-  text-align: center;
-}
 
 /*cards*/
 .container{
@@ -62,8 +59,18 @@ h4{
   object-fit: cover;
 
 }
+
 .inner:hover img{
   transform: scale(1.2);
+}
+
+.card-body{
+  background: white;
+  border-radius: 2%;
+}
+
+#card-body_form{
+  border-radius: 1%;
 }
 
 
@@ -84,11 +91,32 @@ h4{
 }
 
 .descripcion{
+<<<<<<< HEAD
   text-align: justify;
+=======
+  text-align: left;
+}
+
+#contacto{
+  font-size: 80%;
+}
+  
+/*form*/
+
+.formulario{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+select, input{
+  color: blue;
+>>>>>>> a23859630b9c59d5b19fab2616676a46e9d90ea2
 }
 
 
 
+<<<<<<< HEAD
 /* boton a index */
 #backtomain {
   position: fixed; /* Fixed/sticky position */
@@ -108,3 +136,6 @@ h4{
 #backtomain:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+=======
+
+>>>>>>> a23859630b9c59d5b19fab2616676a46e9d90ea2
