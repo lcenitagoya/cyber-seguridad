@@ -12,8 +12,9 @@
     <title>Formulario</title>
 </head>
 <body>
+    <button onclick="url()" id="backtomain" title="Volver a inicio">Volver a incio</button>
     <h1>formulario_test</h1>
-    <form action="procesar.formulario.php" method="post">
+    <form action="/Home/InsertData" method="post">
         <h3>Le agradeceríamos que responda estas simples preguntas planteadas en el siguiente formulario para que podamos realizar un estudio sobre la ciberseguridad de las personas, y como informarte sobre el tema puede ayudarte a mejorar tu seguridad y a prevenir ataques.</h3>
         <h3>(Se recomienda y aconseja realizar este formulario luego de haber explorado y leído un poco el sitio web)</h3>
         
@@ -25,19 +26,19 @@
         </fieldset>
         
         
-        <fieldset>
-        <legend>Escoja su rango de edad</legend>
-        <label>
-            <select id="edad" name="edad">
-            <option value="1">Menor de 13</option>
-            <option value="2">Entre 13 - 20</option>
-            <option value="3">Entre 21 - 30</option>
-            <option value="4">Entre 31 - 40</option>
-            <option value="5">Entre 41 - 50</option> 
-            <option value="6">Mayor de 51 </option>
-            </select>
-        </label>
-        </fieldset>
+       <!--<fieldset>
+            <legend>Escoja su rango de edad</legend>
+            <label>
+                <select id="edad" name="edad">
+                <option value="1">Menor de 13</option>
+                <option value="2">Entre 13 - 20</option>
+                <option value="3">Entre 21 - 30</option>
+                <option value="4">Entre 31 - 40</option>
+                <option value="5">Entre 41 - 50</option> 
+                <option value="6">Mayor de 51 </option>
+                </select>
+            </label>
+        </fieldset>-->
 
         <fieldset>
             <legend>¿Tienes descargado un antivirus en tu computadora?</legend>
@@ -52,15 +53,15 @@
             </label>
         </fieldset>
 
-        <fieldset>
+        <!--<fieldset>
             <legend>¿Utilizas una contraseña distinta para cada servicio, dispositivo o cuenta que usas?</legend>
             <label>
-                <input type="radio" name="contraseña" value="1">
+                <input type="radio" name="contrasenia" value="1">
                 si
             </label>
             <br>
             <label>
-                <input type="radio" name="contraseña" value="0">
+                <input type="radio" name="contrasenia" value="0">
                 no
             </label>
         </fieldset>
@@ -102,7 +103,7 @@
                 <input type="radio" name="cambioCib" value="0">
                 no
             </label>
-        </fieldset>
+        </fieldset> -->
 
         <br>
 
