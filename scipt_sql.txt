@@ -1,0 +1,38 @@
+Scipt del Sql de creacion de la base de datos "ciberseguridad".
+
+
+CREATE TABLE usuarios (
+    id_usuario int AUTO_INCREMENT PRIMARY KEY,
+    C_nombre text NOT NULL
+    C_edad varchar(20) NOT NULL
+);
+
+
+CREATE TABLE antivirus (
+    id_antivirus INT AUTO_INCREMENT PRIMARY KEY,
+    C_antivirus boolean NOT NULL
+);
+
+
+CREATE TABLE ataques (
+    id_ataques INT AUTO_INCREMENT PRIMARY KEY,
+    C_ataques boolean NOT NULL
+);
+
+
+CREATE TABLE contraseña (
+    id_contraseña INT AUTO_INCREMENT PRIMARY KEY,
+    C_contraseña boolean NOT NULL
+);
+
+
+CREATE TABLE informacion (
+    id_informacion INT AUTO_INCREMENT PRIMARY KEY,
+    C_informacion boolean NOT NULL
+);
+
+
+CREATE TABLE cambioCib (
+    id_cambioCib INT AUTO_INCREMENT PRIMARY KEY,
+    C_cambioCib boolean NOT NULL
+);
