@@ -11,17 +11,6 @@ namespace asp_net.Controllers
 {
     public class HomeController : Controller
     {
-        MySqlConnection con = new MySqlConnection(@"")
-        
-
-
-
-
-
-
-
-
-
         private readonly MySqlConnection db;
 
         public HomeController()
@@ -46,36 +35,19 @@ namespace asp_net.Controllers
 
             FormModel.Nombre usuario = new Nombre { C_nombre = nombre };
 
-            // Add the object to the DbContext and save changes to insert into the database
+    
             db.usuario.Add(usuario);
             db.SaveChanges();
 
             formModel.Antivirus antivirusData = new Antivirus { C_antivirus = antivirus };
 
-            // Add the object to the DbContext and save changes to insert into the database
+            
             db.antivirus.Add(antivirusData);
             db.SaveChanges();
 
             ViewBag.Message = "Data inserted successfully!";
-            return View("Index");
+            return View("resultado_form.html");
         }
-
-            // Create new instances of your model classes
-            //formModel.Nombre nombre = new Nombre { C_nombre = nombre };
-            //Antivirus antivirusData = new Antivirus { C_antivirus = antivirus };
-
-            // Add the objects to the DbContext and save changes to insert into the database
-            //db.usuarios.Add(nombre);
-            //db.antivirus.Add(antivirusData);
-            //db.SaveChanges();
-
-            //ViewBag.Message = "Data inserted successfully!";
-            //return View("Index");
-
-
-
-
-            
 
     }
 }

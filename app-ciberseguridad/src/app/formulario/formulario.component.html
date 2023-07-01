@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formulario.component.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <script src="java.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -13,14 +13,111 @@
 </head>
 <body>
     <button onclick="url()" id="backtomain" title="Volver a inicio">Volver a incio</button>
+    <h1>formulario_test</h1>
+    <form action="/Home/InsertData" method="post">
+        <h3>Le agradeceríamos que responda estas simples preguntas planteadas en el siguiente formulario para que podamos realizar un estudio sobre la ciberseguridad de las personas, y como informarte sobre el tema puede ayudarte a mejorar tu seguridad y a prevenir ataques.</h3>
+        <h3>(Se recomienda y aconseja realizar este formulario luego de haber explorado y leído un poco el sitio web)</h3>
+        
+        <fieldset>
+        <legend>Ingrese su nombre</legend>
+        <label>
+        <input type="text" id="nombre" name="nombre">
+        </label>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Escoja su rango de edad</legend>
+            <label>
+                <select id="edad" name="edad">
+                <option value="1">Menor de 13</option>
+                <option value="2">Entre 13 - 20</option>
+                <option value="3">Entre 21 - 30</option>
+                <option value="4">Entre 31 - 40</option>
+                <option value="5">Entre 41 - 50</option> 
+                <option value="6">Mayor de 51 </option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Tienes descargado un antivirus en tu computadora?</legend>
+            <label>
+                <input type="radio" name="antivirus" value="1">
+                si
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="antivirus" value="0">
+                no
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Utilizas una contraseña distinta para cada servicio, dispositivo o cuenta que usas?</legend>
+            <label>
+                <input type="radio" name="contrasenia" value="1">
+                si
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="contrasenia" value="0">
+                no
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿Tienes cuidado respecto a donde ingresas o publicas tu información personal?</legend>
+            <label>
+                <input type="radio" name="informacion" value="1">
+                si
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="informacion" value="0">
+                no
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Previo a esta página, ¿conocías alguno de los riesgos y ataques que puedes sufrir si cuentas con una mala seguridad?</legend>
+            <label>
+                <input type="radio" name="ataques" value="1">
+                si
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="ataques" value="0">
+                no
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Luego de la información brindada en esta página web, ¿planeas realizar algún cambio respecto a tu ciberseguridad?</legend>
+            <label>
+                <input type="radio" name="cambioCib" value="1">
+                si
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="cambioCib" value="0">
+                no
+            </label>
+        </fieldset> 
+
+        <br>
+
+        <button>Mandar</button>
+    </form>
+
     <div class="formulario">
         <nav class="navbar navbar-light justify-content-center"> 
             <a class="navbar-brand" href="index.html">
               Ciber Seguridad
             </a>
         </nav>
-        <h2>Formulario</h1>
-        <form action="/Home/InsertData" method="post">
+        <h2>Formulario</h2>
+        <form action="procesar.formulario.php" method="post">
         <h4>Le agradeceríamos que responda estas simples preguntas planteadas en el siguiente formulario para que podamos realizar un estudio sobre la ciberseguridad de las personas, y como informarte sobre el tema puede ayudarte a mejorar tu seguridad y a prevenir ataques.</h4>
         <h4>(Se recomienda y aconseja realizar este formulario luego de haber explorado y leído un poco el sitio web)</h4>
 
@@ -116,13 +213,14 @@
                                 </fieldset>
                         
                                 <br>
-                                <a href="resultado_form.html" class="btn btn-primary">Mandar</a>
+                                <button class="btn btn-primary">Mandar</button>
                             </form>
-                        
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+                        
+                   
         
 
     </div> 

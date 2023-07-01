@@ -91,9 +91,7 @@ h3, h4, p{
 }
 
 .descripcion{
-<<<<<<< HEAD
   text-align: justify;
-=======
   text-align: left;
 }
 
@@ -111,12 +109,10 @@ h3, h4, p{
 
 select, input{
   color: blue;
->>>>>>> a23859630b9c59d5b19fab2616676a46e9d90ea2
 }
 
 
 
-<<<<<<< HEAD
 /* boton a index */
 #backtomain {
   position: fixed; /* Fixed/sticky position */
@@ -136,6 +132,7 @@ select, input{
 #backtomain:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-=======
 
->>>>>>> a23859630b9c59d5b19fab2616676a46e9d90ea2
+#final{
+  margin: 20%;
+}
