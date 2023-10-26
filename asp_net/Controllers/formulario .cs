@@ -2,9 +2,9 @@ namespace asp_net
 {
     public class FormModel
     {
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
 
-        public string Edad { get; set; }
+        public string? Edad { get; set; }
 
         public bool Antivirus { get; set; }
 
